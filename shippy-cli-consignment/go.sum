@@ -366,6 +366,10 @@ github.com/mattn/go-tty v0.0.3/go.mod h1:ihxohKRERHTVzN+aSVRwACLCeqIoZAWpoICkkvr
 github.com/matttproud/golang_protobuf_extensions v1.0.1/go.mod h1:D8He9yQNgCq6Z5Ld7szi9bcBfOoFv/3dc6xSMkL2PC0=
 github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602155618-a0befc565471 h1:JUwUBtP72nlNHcgjY+m0Chc4zltpddju0sbkdpn4pbY=
 github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602155618-a0befc565471/go.mod h1:69O5pscRyQpo3nHfguQvF6ou20uMYX6YSRk0nB65vCs=
+github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602160454-ead5317ebba1 h1:RtaVLHVY/LPzIJbH1z8a4Nggl5V6d0wdV/Nx0TtH5Tg=
+github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602160454-ead5317ebba1/go.mod h1:69O5pscRyQpo3nHfguQvF6ou20uMYX6YSRk0nB65vCs=
+github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602190953-5c4b24964398 h1:arYcSmi6w43f4+gJj9vPb/j3KfTh0XP3zWKYpFEuHDA=
+github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602190953-5c4b24964398/go.mod h1:EKA5fRL9P/gr4y4IE85weyHf8GOX2o9lyPL3o2lLfQk=
 github.com/miekg/dns v1.0.14/go.mod h1:W1PPwlIAgtquWBMBEV9nkV9Cazfe8ScdGz/Lj7v3Nrg=
 github.com/miekg/dns v1.1.40/go.mod h1:KNUDUusw/aVsxyTYZM1oqvCicbwhgbNgztCETuNZ7xM=
 github.com/miekg/dns v1.1.43 h1:JKfpVSCB84vrAmHzyrsxB5NAr5kLoMXZArPSw7Qlgyg=

@@ -3,7 +3,7 @@ module github.com/maxwellgithinji/shippy/shippy-cli-consignment
 go 1.17
 
 require (
-	github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602155618-a0befc565471
+	github.com/maxwellgithinji/shippy/shippy-service-consignment v0.0.0-20220602190953-5c4b24964398
 	go-micro.dev/v4 v4.7.0
 )
 

@@ -7,4 +7,7 @@ run-docker:
 
 # RPC
 proto-consignment:
+	protoc -I. --go_out=plugins=grpc:. proto/consignment/consignment.proto
+	
+micro-consignment:
 	protoc --proto_path=. --go_out=. --micro_out=. proto/consignment/consignment.proto

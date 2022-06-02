@@ -9,7 +9,7 @@ import (
 	"context"
 
 	pb "github.com/maxwellgithinji/shippy/shippy-service-consignment/proto/consignment"
-	"google.golang.org/grpc"
+	micro "go-micro.dev/v4"
 )
 
 const (
@@ -28,13 +28,11 @@ func parseFile(file string) (*pb.Consignment, error) {
 }
 
 func main() {
-	// Set up a connection to the server.
-	conn, err := grpc.Dial(address, grpc.WithInsecure())
-	if err != nil {
-		log.Fatalf("Did not connect: %v", err)
-	}
-	defer conn.Close()
-	client := pb.NewShippingServiceClient(conn)
+
+	service := micro.NewService(micro.Name("shippy.consignment.cli"))
+	service.Init()
+
+	client := pb.NewShippingService("shippy.consignment.service", service.Client())
 
 	// Contact the server and print out its response.
 	file := defaultFilename

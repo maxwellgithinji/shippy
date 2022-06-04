@@ -35,6 +35,8 @@ services:
   # COMMANDS
   cli:
     build: ./shippy-cli-consignment
+  user-cli:
+    build: ./shippy-cli-user
 
 #DATABASES
 

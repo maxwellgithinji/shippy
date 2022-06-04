@@ -8,9 +8,6 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-type CustomClaims struct {
-	User *pb.User
-}
 
 type authable interface {
 	Decode(token string) (*CustomClaims, error)

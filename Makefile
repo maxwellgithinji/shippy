@@ -22,3 +22,9 @@ test-user:
 	--password="Testing123" \
 	--company="Test Company"
 
+
+pg-start:
+	docker-compose up -d database
+
+user-start:
+	docker-compose up -d user

@@ -3,11 +3,11 @@ package main
 import (
 	"context"
 	"errors"
+	"log"
 
 	pb "github.com/maxwellgithinji/shippy/shippy-service-user/proto/user"
 	"golang.org/x/crypto/bcrypt"
 )
-
 
 type authable interface {
 	Decode(token string) (*CustomClaims, error)
@@ -63,6 +63,7 @@ func (s *handler) Auth(ctx context.Context, req *pb.User, res *pb.Token) error {
 }
 
 func (s *handler) Create(ctx context.Context, req *pb.User, res *pb.Response) error {
+	log.Println("user:", req)
 	hashedPass, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
 	if err != nil {
 		return err
